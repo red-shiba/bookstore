@@ -17,6 +17,7 @@ header {
   background-color: #0c1b2d;
   width: 100%;
   padding: 15px 30px;
+  justify-content: space-between;
 }
 
 header img {
@@ -33,6 +34,12 @@ header h1 {
 header span {
   font-weight: lighter;
   color: #ccc;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
 }
 
 #book-container {
@@ -106,6 +113,7 @@ header span {
   max-height: 150px;
   overflow-y: auto;
   padding: 8px;
+  margin: 10px -8px;
 }
 
 .comments::-webkit-scrollbar {
@@ -143,9 +151,11 @@ header span {
   flex: 1;
   padding: 5px;
   font-size: 0.85rem;
-  border: 1px solid #ccc;
+  border: none;
   border-radius: 5px 5px 5px 5px;
   outline: none;
+  color: white;
+  background-color: #0e253f;
 }
 
 .comment-input button {
@@ -157,6 +167,13 @@ header span {
   cursor: pointer;
 }
 
+.comment-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin-top: 20px;
+  }
+
 #filter-liked {
   padding: 5px 10px;
   background-color: #E94F1D;
@@ -164,6 +181,8 @@ header span {
   border: none;
   border-radius: 5px 5px 5px 5px;
   cursor: pointer;
+  margin-right: 30px;
+  font-size: large;
 }
 
 @media (max-width: 320px) {
